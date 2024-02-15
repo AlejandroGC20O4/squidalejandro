@@ -13,6 +13,7 @@
     <p>Hacemos que el demonio se inicie automáticamente cada reinicio de la máquina.</p>
     <img src="img/Captura2.PNG" alt="segunda">
     <h3>Apartado1. Crear una ACL llamada "redes_sociales" que incluye los dominios de las redes sociales que queremos restringir. Denegar tiktok e instagram</h3>
+    <p>MUY IMPORTANTE CADA VEZ QUE SE MODIFICA EL ARCHIVO DE CONFIGURACIÓN SE HACE UN "sudo systemctl restart squid"</p>
     <p>En el archivo de configuración hacemos un sudo nano /etc/squid/squid.conf y añadimos estas 2 líneas</p>
     <img src="img/Captura3.PNG" alt="tercera">
     <p>ahora comprobamos nuestra ip en mi caso la 192.168.10.30 </p>
