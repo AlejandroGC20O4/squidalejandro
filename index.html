@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squid Alejandro</title>
+</head>
+<body>
+    
+    <h1>Prácrica Alejandro Gómez Squid</h1>
+    <p>Instalamos squid </p>
+    <img src="img/Captura.PNG" alt="primera">
+    <p>Hacemos que el demonio se inicie automáticamente cada reinicio de la máquina.</p>
+    <img src="img/Captura2.PNG" alt="segunda">
+    <h3>Apartado1. Crear una ACL llamada "redes_sociales" que incluye los dominios de las redes sociales que queremos restringir. Denegar tiktok e instagram</h3>
+    <p>En el archivo de configuración hacemos un sudo nano /etc/squid/squid.conf y añadimos estas 2 líneas</p>
+    <img src="img/Captura3.PNG" alt="tercera">
+    <p>ahora comprobamos nuestra ip en mi caso la 192.168.10.30 </p>
+    <p>Y en la configuración de conexiones de firefox añadimos la ip con el puerto de squid por defecto</p>
+    <img src="img/Captura4.PNG" alt="cuarta">
+    <p>Comprobamos que está funcionando bien</p>
+    <img src="img/Captura5.PNG" alt="quinta">
+    <p>Instagram funciona y tiktok vemos que también</p>
+    <img src="img/Captura6.PNG" alt="sexta">
+    <p>Si comprobamos otra pagina como por ejemplo el aula virtual nos deja usarla perfectamente</p>
+    <img src="img/Captura7.PNG" alt="septima">
+    <h3>Apartado 2. Crear una ACL llamada "horas_laborables" que establece el rango horario de 9:00 a.m. a 5:00 p.m. de lunes a viernes.</h3>
+    <p>Añadimos estas dos líneas más al archivo de configuración</p>
+    <img src="img/Captura8.PNG" alt="octava">
+    <p>comprobamos y ya que son las 11:55 no me deja entrar</p>
+    <img src="img/Captura9.PNG" alt="novena">
+    <h3>Apartado 3.  Configuración de la autenticación de squid con NCSA. Crear un usuario con tu nombre y configurar el navegador para la autenticación. </h3>
+    <p>Instalamos apache2-utils para poder crear el usuario</p>
+    <img src="img/Captura10.PNG" alt="decima">
+    <p>Ejecutamos este comando para añadir el usuario</p>
+    <img src="img/Captura11.PNG" alt="decimoprimero">
+    <p>Añadimos esta slíneas en el archivo de squid para que me pida autenticación al abrir firefox . </p>
+    <img src="img/Captura12.PNG" alt="decimosegundo">
+    <p>Abrimos firefox y comprobamos que me pide autenticarme para poder navegar</p>
+    <img src="img/Captura13.PNG" alt="decimotercero">
+    <p>Pongo las credenciales y ya podemos usar firefox</p>
+    <img src="img/Captura14.PNG" alt="decimocuarto">
+    <h3>Apartado 4.  Configuración de la autenticación de squid con LDAP. Crear un usuario con tu nombre y configurar el navegador para la autenticación</h3>
+    <p>Añadimos un usuario a ldap con un archivo.ldif</p>
+    <img src="img/Captura15.PNG" alt="decimoquinto">
+    <p>Añadimos estas líneas en el archivo de configuración de squid</p>
+    <img src="img/Captura16.PNG" alt="decimosexto">
+    <p>Comprobamos que todo está bien</p>
+    <img src="img/Captura17.PNG" alt="decimoseptimo">
+    <p>Podemos comprobar que nos pide autenticación de ldap, la ponemos y ya podemos navegar</p>
+    <img src="img/Captura18.PNG" alt="decimooctavo">
+    
+</body>
+</html>
